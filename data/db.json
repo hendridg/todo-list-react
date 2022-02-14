@@ -1,0 +1,19 @@
+{
+    "todos": [
+        {
+        "id": 1,
+        "task": "Setup development environment",
+        "completed": true
+        },
+        {
+        "id": 2,
+        "task": "Develop website and add content",
+        "completed": false
+        },
+        {
+        "id": 3,
+        "task": "Deploy to live server",
+        "completed": false
+        }
+    ]
+}
