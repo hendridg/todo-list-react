@@ -13,15 +13,15 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header title="Todo" />
-      <AddInput
-        setTodos={setData}
-        todos={data}
-      />
-      <TodoList
-        todos={data}
-        setTodos={setData}
-      />
+      <div className="container">
+        <Header title="Todo" />
+        <AddInput setTodos={setData} todos={data} />
+        {data.length > 0 ? (
+          <TodoList todos={data} setTodos={setData} />
+        ) : (
+          <h2>Loading...</h2>
+        )}
+      </div>
     </div>
   );
 }
